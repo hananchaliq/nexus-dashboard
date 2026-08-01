@@ -1,0 +1,29 @@
+.left-panel{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+.right-panel{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+.center-panel{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
