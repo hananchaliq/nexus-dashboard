@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@theme {
+   --color-cyber-bg: #050714;
+   --color-cyber-card: rgba(10, 16, 35, 0.65);
+   --color-cyber-border: rgba(56, 189, 248, 0.15);
+   --color-cyber-accent: #00f0ff;
+   --color-cyber-glow: #3b82f6;
+   --color-cyber-purple: #8b5cf6;
+   --color-cyber-pink: #ec4899;
+
+   --font-sans: "Inter", sans-serif;
+   --font-mono: "Fira Code", monospace;
+
+   --shadow-glass: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+   --shadow-glow: 0 0 20px rgba(0, 240, 255, 0.35);
+}
+
+:root {
+   color-scheme: dark;
+}
+* {
+   font-family: "IBM Plex Sans", sans-serif;
+}
+
+body {
+   margin: 0;
+   background-color: var(--color-cyber-bg);
+   color: #f3f4f6;
+   font-family: var(--font-sans);
+   overflow-x: hidden;
+   user-select: none;
+}
+
+/* Custom Scrollbar Modern */
+::-webkit-scrollbar {
+   width: 5px;
+   height: 5px;
+}
+::-webkit-scrollbar-track {
+   background: rgba(10, 15, 30, 0.5);
+}
+::-webkit-scrollbar-thumb {
+   background: rgba(56, 189, 248, 0.25);
+   border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+   background: rgba(56, 189, 248, 0.5);
+}
+
+/* Glassmorphism Helper Classes */
+.glass-panel {
+   background: rgba(10, 16, 35, 0.65);
+   backdrop-filter: blur(16px);
+   -webkit-backdrop-filter: blur(16px);
+   border: 1px solid rgba(56, 189, 248, 0.12);
+   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
+}
+
+.glass-panel-interactive {
+   transition: all 0.25s ease-in-out;
+}
+.glass-panel-interactive:hover {
+   border-color: rgba(56, 189, 248, 0.35);
+   box-shadow: 0 0 15px rgba(0, 240, 255, 0.2);
+}

@@ -1,0 +1,1 @@
+export const getGeocode = async () => ({ lat: -8.8607, lon: 121.6605 });
